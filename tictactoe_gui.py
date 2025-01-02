@@ -34,7 +34,7 @@ def on_button_click(row, col):
             messagebox.showinfo("Game Over", "It's a tie!")
         else:
             current_player = "O" if current_player == "X" else "X"
-            label.config(text=f"Player {current_player}'s turn")
+            label.config(text=f"Spieler {current_player} ist dran")
 
 
 if __name__ == "__main__":
