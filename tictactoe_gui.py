@@ -35,6 +35,8 @@ def on_button_click(row, col):
         else:
             current_player = "O" if current_player == "X" else "X"
             label.config(text=f"Spieler {current_player} ist dran")
+    elif board[row][col] != "":
+        print("Dort wurde bereits ein Zeichen gesetzt!")
 
 
 if __name__ == "__main__":
